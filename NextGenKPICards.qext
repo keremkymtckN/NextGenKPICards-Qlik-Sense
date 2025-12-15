@@ -1,0 +1,7 @@
+{
+  "name": "VFB Dashboard UI Kit",
+  "description": "VakıfBank themed KPI + Chart + Table dashboard container",
+  "version": "1.0.0",
+  "type": "visualization",
+  "author": "Kerem"
+}

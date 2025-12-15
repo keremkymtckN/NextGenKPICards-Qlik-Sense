@@ -1,0 +1,121 @@
+/* ROOT */
+.vfb-dashboard {
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* THEMES */
+.vfb-dashboard.dark {
+  background: #0f1f28;
+  color: #ffffff;
+}
+
+.vfb-dashboard.light {
+  background: #f5f7fa;
+  color: #1f2a33;
+}
+
+/* HEADER */
+.vfb-header {
+  margin-bottom: 16px;
+}
+
+.vfb-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fcb000; /* VakıfBank gold */
+}
+
+/* KPI GRID */
+.vfb-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 12px;
+  margin-bottom: 20px;
+}
+
+.vfb-kpi-slot {
+  min-height: 80px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #2f4858;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* Light override */
+.vfb-dashboard.light .vfb-kpi-slot {
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* CONTENT GRID */
+.vfb-content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+}
+
+/* PANEL */
+.vfb-panel {
+  background: #1b2f3c;
+  border-radius: 14px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
+}
+
+.vfb-panel.full {
+  grid-column: span 3;
+  min-height: 280px;
+}
+
+/* Light override */
+.vfb-dashboard.light .vfb-panel {
+  background: #ffffff;
+}
+
+/* PANEL TITLE */
+.vfb-panel-title {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #fcb000;
+}
+
+/* PANEL BODY */
+.vfb-panel-body {
+  flex: 1;
+  position: relative;
+}
+
+/* EMPTY STATE */
+.vfb-empty {
+  height: 100%;
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  text-align: center;
+}
+
+.vfb-dashboard.light .vfb-empty {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.vfb-empty-title {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.vfb-empty-sub {
+  font-size: 11px;
+  opacity: 0.7;
+}
